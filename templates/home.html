@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyzer</title>
+
+    <style>
+        body{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        input{
+            width: 300px;
+            padding: 8px;
+        }
+
+        button{
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sentiment Analyzer</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <input type="text"
+                id="sentence"
+                name="sentence"
+                placeholder="Enter a sentence">
+
+        <button type="submit">
+            Analyze
+        </button>
+    </form>
+
+
+    <br>
+
+    {% if result %}
+        <h3>Sentence Analyzed:</h3>
+        <p>{{ sentence }}</p>
+
+        <h3>Sentiment:</h3>
+        <p>{{ result }}</p>
+    {% endif %}
+
+<script>
+    document.getElementById("sentence").focus();
+</script>
+
+</body>
+</html>
