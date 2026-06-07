@@ -47,15 +47,15 @@ http://127.0.0.1:8000/
 
 ### Home Page
 
-(sahp.png)
+(screenshots/sahp.png)
 
 ### Positive Sentiment
 
-(sapr.png)
+(screenshots/sapr.png)
 
 ### Negative Sentiment
 
-(sanr.png)
+(screenshots/sanr.png)
 
 ## Example
 
